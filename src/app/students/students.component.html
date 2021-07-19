@@ -1,0 +1,28 @@
+<h1 class="text-primary">Students</h1>
+<div>
+    <table class="table table-success table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">City</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of studentsArr">
+                <td scope="row">{{student.id}}</td>
+                <td scope="row"><a routerLink='students/{{student.id}}'>{{student.name}}</a></td>
+                <td scope="row">{{student.email}}</td>
+                <td scope="row">{{student.address.city}}</td>
+                <td colspan="4">
+                    <table class="table mb-0">
+                        <th> <button routerLink='update/{{student.id}}' class="btn btn-primary">Update</button></th>
+                        <th> <button class="btn btn-danger">Delete</button></th>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

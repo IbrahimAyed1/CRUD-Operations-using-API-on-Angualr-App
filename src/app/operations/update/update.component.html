@@ -1,0 +1,15 @@
+<div class="row col-4">
+    <div class="m-3">
+        <input type="number" class="form-control" id="userid" placeholder="# ID" [(ngModel)]="_id">
+    </div>
+    <div class="m-3">
+        <input type="text" class="form-control" id="userName" placeholder="John Doe" [(ngModel)]="_name">
+    </div>
+    <div class="m-3">
+        <input type="email" class="form-control" id="userNameOfUser" placeholder="john.doe" [(ngModel)]="_userName">
+    </div>
+    <div class="m-3">
+        <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" [(ngModel)]="_email">
+    </div>
+    <button class="btn btn-success col-md-4 text-center m-4" (click)="setData()">Submit</button>
+</div>
